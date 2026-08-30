@@ -1,0 +1,65 @@
+/*@!Encoding:65001*/
+includes
+{
+}
+
+variables
+{
+  msTimer txTimer;
+  message EMS_Data_Msg msg;
+  message Cluster_Display_Msg msg1;
+}
+
+on start
+{
+  write("Welcome CAPL Programming");
+  setTimer(txTimer, 100);
+}
+
+on message EMS_Data_Msg
+{
+  float temp;
+  float speed;
+
+  temp = this.Engine_Temperature;
+  write("Received Engine Temp:%f C", temp);
+
+  speed = this.Engine_Speed;
+  write("Received Engine Speed:%f rpm", speed);
+
+  // Over-speed check (was mistakenly comparing temp before)
+  if (speed > 6000)
+  {
+    write("Warning: High speed");
+    $Warning_Over_Speed = 1;
+  }
+  else
+  {
+    $Warning_Over_Speed = 0;
+  }
+
+  // Over-temperature check
+  if (temp > 110)
+  {
+    write("Warning: High temperature");
+    $Warning_Lamp = 1;
+  }
+  else
+  {
+    $Warning_Lamp = 0;
+  }
+}
+
+on timer txTimer
+{
+  // Set both signals on the same message, then send once
+  msg1.Warning_Lamp       = $Warning_Lamp;
+  msg1.Warning_Over_Speed = $Warning_Over_Speed;
+
+  write("Sending Cluster_Display_Msg: Lamp=%d, OverSpeed=%d",
+        $Warning_Lamp, $Warning_Over_Speed);
+
+  output(msg1);
+
+  setTimer(txTimer, 100);
+}
