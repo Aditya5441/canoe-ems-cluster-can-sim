@@ -1,5 +1,9 @@
 # 🚗 CANoe EMS–Cluster CAN Communication Simulation
 
+
+Uploading WhatsApp Video 2026-08-30 at 12.55.18 PM.mp4…
+
+
 > Simulating real-time CAN bus communication between an **Engine Management System (EMS) ECU** and an **Instrument Cluster ECU** using **Vector CANoe** and **CAPL**.
 
 ![CANoe](https://img.shields.io/badge/Tool-Vector%20CANoe-blue)
