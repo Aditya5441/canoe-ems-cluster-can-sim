@@ -1,4 +1,4 @@
-# 🚗 CANoe EMS–Cluster CAN Communication Simulation
+# 🚗 CANoe based Overvoltage & Overspeed protection of Vehicle Engine
 
 > Simulating real-time CAN bus communication between an **Engine Management System (EMS) ECU** and an **Instrument Cluster ECU** using **Vector CANoe** and **CAPL**.
 
