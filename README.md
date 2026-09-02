@@ -2,10 +2,15 @@
 
 > Simulating real-time CAN bus communication between an **Engine Management System (EMS) ECU** and an **Instrument Cluster ECU** using **Vector CANoe** and **CAPL**.
 
-![CANoe](https://img.shields.io/badge/Tool-Vector%20CANoe-blue)
-![CAPL](https://img.shields.io/badge/Language-CAPL-orange)
-![CAN](https://img.shields.io/badge/Protocol-CAN-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Tool](https://img.shields.io/badge/TOOL-CANoe-1f2937?style=for-the-badge&labelColor=1f2937&color=1D4ED8)
+![Language](https://img.shields.io/badge/LANGUAGE-CAPL-1f2937?style=for-the-badge&labelColor=1f2937&color=EA580C)
+![Bus](https://img.shields.io/badge/BUS-CAN-1f2937?style=for-the-badge&labelColor=1f2937&color=15803D)
+![Network](https://img.shields.io/badge/NETWORK-2%20ECUs-1f2937?style=for-the-badge&labelColor=1f2937&color=475569)
+
+![Security](https://img.shields.io/badge/LOGIC-ENGINE%20SPEED%20AND%20ENGINE%20TEMPERATURE-1f2937?style=for-the-badge&labelColor=1f2937&color=7C3AED)
+![Database](https://img.shields.io/badge/DATABASE-DBC-1f2937?style=for-the-badge&labelColor=1f2937&color=0EA5E9)
+![Status](https://img.shields.io/badge/STATUS-SIMULATION%20VALIDATED-1f2937?style=for-the-badge&labelColor=1f2937&color=65A30D)
+
 
 ## 🎥 Demo Video
 
